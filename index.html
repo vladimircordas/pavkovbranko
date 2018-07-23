@@ -1,0 +1,642 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <script src="https://use.fontawesome.com/7791b766bd.js"></script>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="backdrop noise">
+        <img src="./img/wire.png" class="shadowchild" id="background-image">
+        <div class="noise shadowchild"></div>
+    </div>
+    <div class="header-container">
+        <header class="wrapper clearfix">
+            <h1 class="title">PAVKOV BRANKO</h1>
+            <h2>Software Developer</h2>
+
+            <div onclick="handleMenu()" id="menu-btn" class="hamburger hamburger--emphatic js-hamburger">
+
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+
+            <nav id="sideMenu">
+                <ul>
+                    <li>
+                        <button id="about-btn" class="active">
+                            <span>A</span>
+                            <span>B</span>
+                            <span>O</span>
+                            <span>U</span>
+                            <span>T</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="skills-btn">
+                            <span>S</span>
+                            <span>K</span>
+                            <span>I</span>
+                            <span>L</span>
+                            <span>L</span>
+                            <span>S</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="projects-btn">
+                            <span>P</span>
+                            <span>R</span>
+                            <span>O</span>
+                            <span>J</span>
+                            <span>E</span>
+                            <span>C</span>
+                            <span>T</span>
+                            <span>S</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="contact-btn">
+                            <span>C</span>
+                            <span>O</span>
+                            <span>N</span>
+                            <span>T</span>
+                            <span>A</span>
+                            <span>C</span>
+                            <span>T</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            <section id="about" class="active">
+                <div class="anim-one">
+                    <h1>I am Full-Stack Software Developer. </h1>
+                </div>
+                <div class="anim-two">
+                    <p>I have completed my studies at the Faculty of Technical Sciences in Novi Sad and gained MSc in Mechanical Engineering at the Department of Computer Aided Technologies.
+                    </p>
+                    <p>I was always interested in experimental research and data processing, so for my Bachelor's degree final project, I developed the database of the cutting regime elements based on the Microsoft SQL, as well as the Windows Forms Application</p>
+                </div>
+                <div class="anim-three">
+                    <p> Upon completion of my Bachelor’s studies, I have been working as Mechanical Engineer and Lead Mechanical Engineer and encountered a lot of problems in calculations and 3D modeling for which I know that could be solved more efficiently
+                        with programming, so I decided to finish my studies and improve my programming skills.
+                    </p>
+                    <p> Currently, I am focused on improving my programming skills. My interests are the web and desktop development. You can see the full list of technologies that I'm currently using within Skills section.
+                    </p>
+                </div>
+
+            </section>
+            <section id="skills">
+                <aside class="left_side anim-one">
+                    <ul class="clicked" id="skills-menu" role="menu">
+                        <li class="selected">
+                            <a class="active" id="">PROGRAMMING</a>
+                        </li>
+                        <li class="">
+                            <a class="ng-tns-c4-1" id="">WEB DEVELOPMENT</a>
+                        </li>
+                        <li class="">
+                            <a class="ng-tns-c4-1" id="">DESKTOP DEVELOPMENT</a>
+                        </li>
+                        <li class="">
+                            <a class="ng-tns-c4-1" id="">DATABASES</a>
+                        </li>
+                        <li class="">
+                            <a class="ng-tns-c4-1" id="">WEB DESIGN</a>
+                        </li>
+                        <li class="">
+                            <a class="ng-tns-c4-1" id="">CAD/CAM</a>
+                        </li>
+
+
+
+                    </ul>
+                </aside>
+                <div class="right_side anim-two">
+                    <div class="skills-wrapper active" id="programming-skills">
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/Csharp_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>Visual C#</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-csharp">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/js_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>JavaScript</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-javascript">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/Csharp_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>Object Pascal</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-opascal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-wrapper" id="web-skills">
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/html_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>HTML5</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-html">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/css_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>CSS3</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-css">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/Csharp_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>jQuery</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-jquery">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-wrapper" id="desktop-skills">
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/aspnet_logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>ASP .NET</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-html">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/aspnet_winforms_logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>Windows Forms</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-css">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/Csharp_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>jQuery</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-jquery">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-wrapper" id="databases-skills">
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/microsoft_sql.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>MSSQL SERVER</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-html">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/microsoft_sql.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>MSSQL SERVER</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-css">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/microsoft_sql.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>MSSQL SERVER</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-jquery">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-wrapper " id="webdes-skills">
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/aspnet_logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>PHOTOSHOP</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-html">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/aspnet_winforms_logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>ILLUSTRATOR</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-css">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/Csharp_Logo.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>INDESIGN</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-jquery">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-wrapper" id="cadcam-skills">
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/acad.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>AUTOCAD</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-html">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/acad.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>ACAD</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-css">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skill-img">
+                                <img src="./img/skills/acad.png" />
+                            </div>
+                            <div class="skill-language">
+                                <h2>CAD</h2>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="wrap">
+                                    <div id="progress" class="prog-jquery">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--                <div id="skills-wrapper" style="display: none">
+                    <div class="skill-container" id="auto-cad">
+                        <img src="./img/skills/acad.png" />
+                        <span>AUTO CAD</span>
+                    </div>
+                    <div class="skill-container" id="aspnet">
+                        <img src="./img/skills/aspnet_logo.png" />
+                        <span>ASP .NET</span>
+                    </div>
+                    <div class="skill-container" id="csharp">
+                        <img src="./img/skills/Csharp_Logo.png" />
+                        <span>C#</span>
+                    </div>
+                    <div class="skill-container" id="mssql">
+                        <img src="./img/skills/microsoft_sql.png" />
+                        <span>MS SQL SERVER</span>
+                    </div>
+                    <div class="skill-container" id="webskills">
+                        <img src="./img/skills/web.png" />
+                        <span>WEB</span>
+                    </div>
+                    <div class="skill-container" id="winforms">
+                        <img src="./img/skills/aspnet_winforms_logo.png" />
+                        <span>WINDOWS FORMS</span>
+                    </div>
+                    <div id="skill-slides">
+                        <a href="# " class="close-button" id="skills-close"></a>
+                        <div id="autocad-slides">
+                            <div class="skill-description-wrapper">
+                                <div class="skill-image">
+
+                                </div>
+                                <div class="skill-description">
+
+                                </div>
+                                <progress></progress>
+                            </div>
+                        </div>
+                        <div id="aspnet-slides">
+
+                        </div>
+                        <div id="csharp-slides">
+
+                        </div>
+                        <div id="mssql-slides">
+
+                        </div>
+                        <div id="web-slides">
+
+                        </div>
+                        <div id="wforms-slides">
+
+                        </div>
+                    </div>      -->
+            </section>
+            <section id="projects">
+
+                <div class="project-container anim-one">
+                    <div id="crud-project" onclick="crudShow()">
+                        <h1>CREATE READ UPDATE DELETE APLICATION</h1>
+                    </div>
+                </div>
+                <div id="crud-slide" class="project-slide">
+                    <a href="#" class="close-button" id="skills-close" onclick="crudClose()"></a>
+                    <div class="image-container">
+                        <img src="./img/crud/pic-2.png" />
+                    </div>
+                    <div class="project-description">
+                        <h2>WoodsCreative website:</h2>
+                        <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
+                        <dl>
+                            <dt>Technologies used:</dt>
+                            <dd>HTML5</dd>
+                            <dd>CSS3</dd>
+                            <dd>JavaScript ES5/ES6</dd>
+                            <dd>jQuery</dd>
+                            <dd>Materialize framework</dd>
+                            <br>
+                            <dt><a  href="https://woodscreative.ca" target="_blank">visit website</a></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="project-container anim-three">
+                    <div id="modeling-project" onclick="modelingShow()">
+                        <h1>MODELING<br/>OF CUTTING BLA BLA</h1>
+                    </div>
+                </div>
+                <div id="modeling-slide" class="project-slide">
+                    <a href="#" class="close-button" id="skills-close" onclick="modelingClose()"></a>
+                    <div class="image-container">
+                        <img src="./img/modeling/pic1.png" />
+                    </div>
+                    <div class="project-description">
+                        <h2>WoodsCreative website:</h2>
+                        <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
+                        <dl>
+                            <dt>Technologies used:</dt>
+                            <dd>HTML5</dd>
+                            <dd>CSS3</dd>
+                            <dd>JavaScript ES5/ES6</dd>
+                            <dd>jQuery</dd>
+                            <dd>Materialize framework</dd>
+                            <br>
+                            <dt><a  href="https://woodscreative.ca" target="_blank">visit website</a></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="project-container anim-two">
+                    <div id="website-project" onclick="websiteShow()">
+                        <h1>WEBSITE</h1>
+                    </div>
+                </div>
+                <div id="website-slide" class="project-slide">
+                    <a href="#" class="close-button" id="skills-close" onclick="websiteClose()"></a>
+                    <div class="image-container">
+                        <img src="./img/crud/pic-1.png" />
+                    </div>
+                    <div class="project-description">
+                        <h2>WoodsCreative website:</h2>
+                        <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
+                        <dl>
+                            <dt>Technologies used:</dt>
+                            <dd>HTML5</dd>
+                            <dd>CSS3</dd>
+                            <dd>JavaScript ES5/ES6</dd>
+                            <dd>jQuery</dd>
+                            <dd>Materialize framework</dd>
+                            <br>
+                            <dt><a  href="https://woodscreative.ca " target="_blank ">visit website</a></dt>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="contact-container anim-two">
+                    <a href="pavkovbranko@pavkovbranko.com" class="contact-email">
+                        <div class="wrapper">
+                            <i class="far fa-envelope fa-3x"></i>
+                            <i class="far fa-envelope fa-3x"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-container anim-two">
+                    <a>
+                        <div class="wrapper">
+                            <i class="fas fa-phone fa-3x"></i>
+                            <i class="fas fa-phone fa-3x"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-container anim-two">
+                    <a href="www.linkedin.com/brankopavkov/" class="contact-linkedin">
+                        <div class="wrapper">
+                            <i class="fab fa-linkedin-in fa-3x"></i>
+                            <i class="fab fa-linkedin-in fa-3x"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="button-wrapper">
+            <div class="button-group">
+                <button id="about-btn" class="active">
+                    <span>A</span>
+                    <span>B</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>T</span>
+                    </button>
+                <button id="skills-btn">
+                    <span>S</span>
+                    <span>K</span>
+                    <span>I</span>
+                    <span>L</span>
+                    <span>L</span>
+                    <span>S</span>
+                </button>
+                <button id="projects-btn">
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>J</span>
+                    <span>E</span>
+                    <span>C</span>
+                    <span>T</span>
+                    <span>S</span>
+                </button>
+                <button id="contact-btn">
+                    <span>C</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>T</span>
+                </button>
+            </div>
+        </div>
+        <!-- #main -->
+
+    </div>
+    <!-- #main-container -->
+
+    <div class="footer-container">
+        <footer class="wrapper">
+            <h5>2018© Vladimir Cordas</h5>
+        </footer>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+
+    <!--     Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>   -->
+</body>
+
+</html>
