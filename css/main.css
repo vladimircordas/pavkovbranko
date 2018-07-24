@@ -389,7 +389,7 @@
         font: inherit;
         display: inline-block;
         overflow: visible;
-        margin: 5px 0 0 0;
+        margin: 4px 0 0 0;
         padding: 15px;
         cursor: pointer;
         transition-timing-function: linear;
@@ -1514,6 +1514,13 @@
             left: 0;
             right: 0;
             height: 60px;
+        }
+        nav {
+            width: calc(100% - 60px);
+            right: calc(-100% - 60px);
+        }
+        .hamburger.is-active {
+            right: calc(100% - 65px);
         }
         .footer-container {
             height: 40px;
