@@ -1,11 +1,16 @@
 function handleMenu() {
     menuToggle();
     menuShow();
+    if (window.matchMedia("(min-device-width: 320px) and (max-device-width: 480px)").matches) {
+        var websiteTitle = document.getElementById('title');
+        websiteTitle.classList.toggle('hidden');
+    }
  }
 
  function menuShow() {
     var menu = document.getElementById("sideMenu");
     menu.classList.toggle("is-active");
+    
  }
 
 
@@ -14,7 +19,7 @@ function handleMenu() {
     element.classList.toggle("is-active");
  }
 
-
+ 
 
   function websiteShow() {
     var menu = document.getElementById("website-slide");
@@ -49,7 +54,10 @@ function handleMenu() {
 
 
 
-
+function toggleSkillsMenu() {
+    var skillsMenu = document.getElementById('skills-menu');
+    skillsMenu.classList.toggle('active');
+}
 
 
 
@@ -57,33 +65,68 @@ function handleMenu() {
 
 var el = document.querySelectorAll('.button-group button');
 
-for (let i = 0; i < el.length; i++) {
-    el[i].onclick = function() {
+
+for (let i = 0; i < el.length; i++) 
+{
+    el[i].onclick = function() 
+    {
         var section = document.querySelectorAll('.main section');
-        for ( let i = 0; i < el.length; i++) {
+        var sideMenuButtons = document.querySelectorAll("#sideMenu ul li button");
+        console.log(sideMenuButtons.length);
+        for ( let i = 0; i < el.length; i++) 
+        {
             el[i].className = 'slide';
             section[i].className = 'slide';
-
-
+            sideMenuButtons[i].className = 'slide';
             var elements = document.querySelectorAll(".project-slide");
-            for (var v=0; v<elements.length; v++) {
-
-                
-                    elements[v].className = "project-slide";
-                
-              }
+            for (var v=0; v<elements.length; v++) 
+            {
+                elements[v].className = "project-slide";
+            }
                 
         }
-        this.className = "active";
+        el[i].className = "active";
         section[i].className = "active";
+        sideMenuButtons[i].className = 'active';
         var elements = document.querySelectorAll(".project-slide");
         console.log(elements.length);
         for (var v=0; v<elements.length; v++) {
+            elements[v].className = "project-slide";
+        }
+    }
+}
 
-            
-                    elements[v].className = "project-slide";
-        
-              }
+var sideMenuButtons = document.querySelectorAll("#sideMenu ul li button");
+
+
+
+for (let i = 0; i < el.length; i++) 
+{
+    sideMenuButtons[i].onclick = function() 
+    {
+        var section = document.querySelectorAll('.main section');
+        var el = document.querySelectorAll('.button-group button');
+        console.log(sideMenuButtons.length);
+        for ( let i = 0; i < el.length; i++) 
+        {
+            el[i].className = 'slide';
+            section[i].className = 'slide';
+            sideMenuButtons[i].className = 'slide';
+            var elements = document.querySelectorAll(".project-slide");
+            for (var v=0; v<elements.length; v++) 
+            {
+                elements[v].className = "project-slide";
+            }
+                
+        }
+        el[i].className = "active";
+        section[i].className = "active";
+        sideMenuButtons[i].className = 'active';
+        var elements = document.querySelectorAll(".project-slide");
+        console.log(elements.length);
+        for (var v=0; v<elements.length; v++) {
+            elements[v].className = "project-slide";
+        }
     }
 }
 /*
