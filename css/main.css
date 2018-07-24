@@ -95,12 +95,18 @@
     .main-container {
         height: calc(100vh - 90px);
         z-index: 11;
+        display: flex;
+    }
+    
+    #contentMain.menuIsOpen {
+        width: calc(100% - 250px);
     }
     
     .main {
         display: flex;
         justify-content: center;
         align-content: center;
+        align-items: center;
     }
     
     .title {
@@ -959,6 +965,10 @@
         background: rgba(22, 30, 38, 0.25);
     }
     
+    #skills-menu-btn {
+        display: none;
+    }
+    
     #skills-menu {
         list-style: none;
         position: relative;
@@ -1479,7 +1489,157 @@
    Media Queries
    ========================================================================== */
     
-    @media only screen and (min-width: 480px) {}
+    @media only screen and (min-device-width: 320px) and (max-device-width: 823px) {
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            padding: 80px 0;
+        }
+        .backdrop.noise {
+            display: none;
+        }
+        .main-container {
+            height: auto;
+            padding: 0;
+            display: flex;
+        }
+        .header-container,
+        .footer-container {
+            background: #21303f;
+        }
+        .header-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+        }
+        .footer-container {
+            height: 40px;
+        }
+        footer h5 {
+            position: relative;
+            right: 0;
+            margin: 10px 0;
+            float: right;
+        }
+        .button-wrapper {
+            display: block;
+        }
+        .header-container h2 {
+            display: none;
+        }
+        #about.active,
+        #skills.active,
+        #projects.active,
+        #contact.active {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+        #projects {
+            overflow: visible;
+        }
+        #projects .project-slide {
+            top: -2000px;
+        }
+        #skills .skills-wrapper .row .skill-img {
+            vertical-align: middle;
+        }
+        #skills .skills-wrapper .row div:nth-child(2) {
+            width: calc(100% - 110px);
+        }
+        #skills .skills-wrapper .row div:nth-child(3) {
+            width: 100%;
+        }
+        .skills-wrapper .skill-progress-bar .wrap {
+            height: auto;
+        }
+        .right_side .skills-wrapper.active {
+            display: block;
+            height: auto;
+        }
+        aside.left_side {
+            margin: 0;
+        }
+        #skills-menu {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background: #2a3d50;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            max-height: 0px;
+            transition: all .3s ease;
+            overflow: hidden;
+        }
+        #skills-menu li:last-child {
+            margin-bottom: 0;
+        }
+        #skills-menu.active {
+            max-height: 330px;
+        }
+        .caret {
+            height: 5px;
+            width: 5px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            border: 1px solid white;
+            border-top: none;
+            border-left: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        aside.left_side ul::after {
+            display: none;
+        }
+        #skills-menu li a.active::after {
+            display: none;
+        }
+        #skills-menu-btn {
+            width: 100%;
+            background: #21303f;
+            font-weight: 600;
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 5px 5px 5px 10px;
+            border: 1px solid white;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            cursor: pointer;
+        }
+        .project-container,
+        .project-container.anim-one,
+        .project-container.anim-two {
+            margin: 10px auto;
+            display: block;
+        }
+        #contact.active .contact-container:first-child,
+        #contact.active .contact-container:nth-child(2),
+        #contact.active .contact-container:nth-child(3) {
+            margin: 10px auto;
+            width: 100px;
+            height: 100px;
+        }
+        .main.wrapper {
+            position: relative;
+            height: auto;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: 0;
+            top: 0;
+        }
+        .button-group {
+            display: none;
+        }
+    }
     
     @media only screen and (min-width: 1140px) {
         /* ===============
@@ -1487,7 +1647,6 @@
    =============== */
         .wrapper {
             width: 1170px;
-            /* 1140px - 10% for margins */
             margin: 0 auto;
         }
         .main.wrapper {
