@@ -246,7 +246,7 @@
         width: 100%;
         z-index: 0;
     }
-    
+    /*
     @keyframes animateNoise {
         0% {
             opacity: 0.07;
@@ -258,6 +258,7 @@
             opacity: 0.07;
         }
     }
+    */
     
     .noise.shadowchild {
         background-image: url('../img/noise.gif');
@@ -265,7 +266,8 @@
         background-repeat: repeat;
         height: 100%;
         left: 0;
-        animation: animateNoise 10s ease infinite;
+        opacity: 0.1;
+        /*        animation: animateNoise 10s ease infinite;*/
         position: absolute;
         top: 0;
         width: 100%;
@@ -1187,7 +1189,6 @@
     #projects {
         position: relative;
         height: 500px;
-        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1638,6 +1639,14 @@
         }
         .button-group {
             display: none;
+        }
+        .image-container {
+            float: none;
+            width: 100%;
+        }
+        .project-description {
+            float: none;
+            width: 100%;
         }
     }
     
