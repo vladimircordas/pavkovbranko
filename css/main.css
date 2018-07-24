@@ -1536,6 +1536,7 @@
         }
         .footer-container {
             height: 40px;
+            position: relative;
         }
         footer h5 {
             position: relative;
