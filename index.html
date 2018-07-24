@@ -34,7 +34,7 @@
     </div>
     <div class="header-container">
         <header class="wrapper clearfix">
-            <h1 class="title">PAVKOV BRANKO</h1>
+            <h1 class="title" id="title">PAVKOV BRANKO</h1>
             <h2>Software Developer</h2>
 
             <div onclick="handleMenu()" id="menu-btn" class="hamburger hamburger--emphatic js-hamburger">
@@ -45,9 +45,10 @@
             </div>
 
             <nav id="sideMenu">
+
                 <ul>
                     <li>
-                        <button id="about-btn" class="active">
+                        <button id="about-btn" class="active" onclick="navigationButtonPress()">
                             <span>A</span>
                             <span>B</span>
                             <span>O</span>
@@ -56,7 +57,7 @@
                         </button>
                     </li>
                     <li>
-                        <button id="skills-btn">
+                        <button id="skills-btn" onclick="navigationButtonPress()">
                             <span>S</span>
                             <span>K</span>
                             <span>I</span>
@@ -66,7 +67,7 @@
                         </button>
                     </li>
                     <li>
-                        <button id="projects-btn">
+                        <button id="projects-btn" onclick="navigationButtonPress()">
                             <span>P</span>
                             <span>R</span>
                             <span>O</span>
@@ -78,7 +79,7 @@
                         </button>
                     </li>
                     <li>
-                        <button id="contact-btn">
+                        <button id="contact-btn" onclick="navigationButtonPress()">
                             <span>C</span>
                             <span>O</span>
                             <span>N</span>
@@ -92,11 +93,11 @@
             </nav>
         </header>
     </div>
-    <div class="main-container">
+    <div class="main-container" id="contentMain">
         <div class="main wrapper clearfix">
             <section id="about" class="active">
                 <div class="anim-one">
-                    <h1>I am Full-Stack Software Developer. </h1>
+                    <h1>I am Full-Stack Software Developer.</h1>
                 </div>
                 <div class="anim-two">
                     <p>I have completed my studies at the Faculty of Technical Sciences in Novi Sad and gained MSc in Mechanical Engineering at the Department of Computer Aided Technologies.
@@ -104,34 +105,38 @@
                     <p>I was always interested in experimental research and data processing, so for my Bachelor's degree final project, I developed the database of the cutting regime elements based on the Microsoft SQL, as well as the Windows Forms Application</p>
                 </div>
                 <div class="anim-three">
-                    <p> Upon completion of my Bachelor’s studies, I have been working as Mechanical Engineer and Lead Mechanical Engineer and encountered a lot of problems in calculations and 3D modeling for which I know that could be solved more efficiently
+                    <p>Upon completion of my Bachelor’s studies, I have been working as Mechanical Engineer and Lead Mechanical Engineer and encountered a lot of problems in calculations and 3D modeling for which I know that could be solved more efficiently
                         with programming, so I decided to finish my studies and improve my programming skills.
                     </p>
-                    <p> Currently, I am focused on improving my programming skills. My interests are the web and desktop development. You can see the full list of technologies that I'm currently using within Skills section.
+                    <p>Currently, I am focused on improving my programming skills. My interests are the web and desktop development. You can see the full list of technologies that I'm currently using within Skills section.
                     </p>
                 </div>
 
             </section>
             <section id="skills">
                 <aside class="left_side anim-one">
+                    <button id="skills-menu-btn" onclick="toggleSkillsMenu()">
+                        <span id="skill-name">SKILLS MENU </span>
+                        <span class="caret"></span>
+                    </button>
                     <ul class="clicked" id="skills-menu" role="menu">
                         <li class="selected">
                             <a class="active" id="">PROGRAMMING</a>
                         </li>
                         <li class="">
-                            <a class="ng-tns-c4-1" id="">WEB DEVELOPMENT</a>
+                            <a class="" id="">WEB DEVELOPMENT</a>
                         </li>
                         <li class="">
-                            <a class="ng-tns-c4-1" id="">DESKTOP DEVELOPMENT</a>
+                            <a class="" id="">DESKTOP DEVELOPMENT</a>
                         </li>
                         <li class="">
-                            <a class="ng-tns-c4-1" id="">DATABASES</a>
+                            <a class="" id="">DATABASES</a>
                         </li>
                         <li class="">
-                            <a class="ng-tns-c4-1" id="">WEB DESIGN</a>
+                            <a class="" id="">WEB DESIGN</a>
                         </li>
                         <li class="">
-                            <a class="ng-tns-c4-1" id="">CAD/CAM</a>
+                            <a class="" id="">CAD/CAM</a>
                         </li>
 
 
@@ -568,14 +573,14 @@
         </div>
         <div class="button-wrapper">
             <div class="button-group">
-                <button id="about-btn" class="active">
+                <button id="about-btn" class="active" onclick="navigationButtonPress()">
                     <span>A</span>
                     <span>B</span>
                     <span>O</span>
                     <span>U</span>
                     <span>T</span>
                     </button>
-                <button id="skills-btn">
+                <button id="skills-btn" onclick="navigationButtonPress()">
                     <span>S</span>
                     <span>K</span>
                     <span>I</span>
@@ -583,7 +588,7 @@
                     <span>L</span>
                     <span>S</span>
                 </button>
-                <button id="projects-btn">
+                <button id="projects-btn" onclick="navigationButtonPress()">
                     <span>P</span>
                     <span>R</span>
                     <span>O</span>
@@ -593,7 +598,7 @@
                     <span>T</span>
                     <span>S</span>
                 </button>
-                <button id="contact-btn">
+                <button id="contact-btn" onclick="navigationButtonPress()">
                     <span>C</span>
                     <span>O</span>
                     <span>N</span>
