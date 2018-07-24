@@ -155,7 +155,7 @@
     
     .main aside {
         color: white;
-        padding: 0px 5% 10px;
+        padding: 10px 5% 10px;
     }
     
     .footer-container footer {
@@ -328,7 +328,7 @@
     }
     
     nav.is-active {
-        right: 0;
+        transform: translateX(-120%) translateX(60px);
     }
     /* =========== MENU BUTTON ============ */
     
@@ -1261,28 +1261,28 @@
     
     @keyframes projectSlideIn {
         0% {
-            top: -600px;
+            transform: translateY(0px);
             opacity: 0;
         }
         20% {
             opacity: 0.2;
         }
         100% {
-            top: 10px;
+            transform: translateY(500px);
             opacity: 1;
         }
     }
     
     @keyframes projectSlideOut {
         0% {
-            top: 10px;
+            transform: translateY(500px);
             opacity: 1;
         }
         50% {
             opacity: 0.8;
         }
         100% {
-            top: -600px;
+            transform: translateY(0px);
             opacity: 0;
         }
     }
@@ -1494,15 +1494,15 @@
         body {
             overflow-x: hidden;
             overflow-y: scroll;
-            padding: 80px 0;
         }
-        .backdrop.noise {
+        .noise.shadowchild {
             display: none;
         }
         .main-container {
             height: auto;
             padding: 0;
             display: flex;
+            padding: 60px 0;
         }
         .header-container,
         .footer-container {
@@ -1516,11 +1516,23 @@
             height: 60px;
         }
         nav {
-            width: calc(100% - 60px);
-            right: calc(-100% - 60px);
+            width: 0px;
+            right: auto;
+            left: 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        nav.is-active {
+            width: calc(100% - 65px);
+            right: 0;
+            left: 0;
+            transform: none;
+        }
+        .hamburger {
+            z-index: 999;
         }
         .hamburger.is-active {
-            right: calc(100% - 65px);
+            right: 0;
         }
         .footer-container {
             height: 40px;
@@ -1545,11 +1557,42 @@
             width: 100%;
             display: block;
         }
+        #contact.active {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
         #projects {
             overflow: visible;
         }
+        @keyframes projectSlideIn {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+            20% {
+                opacity: 0.2;
+            }
+            100% {
+                transform: translateY(1010px);
+                opacity: 1;
+            }
+        }
+        @keyframes projectSlideOut {
+            0% {
+                transform: translateY(1010px);
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+        }
         #projects .project-slide {
-            top: -2000px;
+            margin: 0 auto;
         }
         #skills .skills-wrapper .row .skill-img {
             vertical-align: middle;
@@ -1635,6 +1678,7 @@
         }
         .main.wrapper {
             position: relative;
+            min-height: calc(100vh - 120px);
             height: auto;
             width: 100%;
             align-items: center;
