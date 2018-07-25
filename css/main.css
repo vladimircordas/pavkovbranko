@@ -299,7 +299,7 @@
         height: 5px;
         width: 30px;
         background-color: #fff;
-        transition: all 0.25s ease-out;
+        transition: all 0.25s ease-in-out;
     }
     
     .close-button:after {
@@ -521,21 +521,21 @@
     
     .hamburger--emphatic.is-active .hamburger-inner {
         transition-delay: 0s;
-        transition-timing-function: ease-out;
+        transition-timing-function: ease-in-out;
         background-color: transparent;
     }
     
     .hamburger--emphatic.is-active .hamburger-inner:before {
         top: -80px;
         left: -80px;
-        transition: left .125s ease-out, top .05s linear .125s, transform .125s cubic-bezier(.075, .82, .165, 1) .175s;
+        transition: left .125s ease-in-out, top .05s linear .125s, transform .125s cubic-bezier(.075, .82, .165, 1) .175s;
         transform: translate3d(80px, 80px, 0) rotate(45deg);
     }
     
     .hamburger--emphatic.is-active .hamburger-inner:after {
         top: -80px;
         right: -80px;
-        transition: right .125s ease-out, top .05s linear .125s, transform .125s cubic-bezier(.075, .82, .165, 1) .175s;
+        transition: right .125s ease-in-out, top .05s linear .125s, transform .125s cubic-bezier(.075, .82, .165, 1) .175s;
         transform: translate3d(-80px, 80px, 0) rotate(-45deg);
     }
     /* ===== GENERAL STUFF ===== */
@@ -694,11 +694,11 @@
     @keyframes animateOne {
         0% {
             opacity: 0;
-            transform: translateX(-100px);
+            transform: translateX(-200px);
         }
         30% {
             opacity: 0;
-            transform: translateX(-100px);
+            transform: translateX(-200px);
         }
         100% {
             opacity: 1;
@@ -709,11 +709,11 @@
     @keyframes animateTwo {
         0% {
             opacity: 0;
-            transform: translateX(100px);
+            transform: translateX(200px);
         }
         30% {
             opacity: 0;
-            transform: translateX(100px);
+            transform: translateX(200px);
         }
         100% {
             opacity: 1;
@@ -1387,11 +1387,11 @@
     }
     
     #contact.active .contact-container:nth-child(2) {
-        animation-delay: .15s;
+        animation-delay: .25s;
     }
     
     #contact.active .contact-container:nth-child(3) {
-        animation-delay: .3s;
+        animation-delay: .4s;
         margin-top: -50px;
     }
     
