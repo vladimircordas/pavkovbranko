@@ -1,7 +1,7 @@
 function handleMenu() {
     menuToggle();
     menuShow();
-    if (window.matchMedia("(min-device-width: 320px) and (max-device-width: 480px)").matches) {
+    if (window.matchMedia("(min-device-width: 320px) and (max-device-width: 823px)").matches) {
         var websiteTitle = document.getElementById('title');
         websiteTitle.classList.toggle('hidden');
     }
@@ -186,7 +186,7 @@ for (let i = 0; i < skillsButton.length; i++) {
         var skillsSlide = document.querySelectorAll('.right_side .skills-wrapper');
         for ( let i = 0; i < skillsSlide.length; i++) {
             skillsButton[i].className = 'slide';
-            skillsSlide[i].className = 'right_side skills-wrapper';
+            skillsSlide[i].className = 'right_side skills-wrapper slide';
 
 
             
