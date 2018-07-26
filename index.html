@@ -36,16 +36,12 @@
         <header class="wrapper clearfix">
             <h1 class="title" id="title">PAVKOV BRANKO</h1>
             <h2>Software Developer</h2>
-
             <div onclick="handleMenu()" id="menu-btn" class="hamburger hamburger--emphatic js-hamburger">
-
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
                 </div>
             </div>
-
             <nav id="sideMenu">
-
                 <ul>
                     <li>
                         <button id="about-btn" class="active" onclick="navigationButtonPress()">
@@ -111,8 +107,8 @@
                     <p>Currently, I am focused on improving my programming skills. My interests are the web and desktop development. You can see the full list of technologies that I'm currently using within Skills section.
                     </p>
                 </div>
-
             </section>
+            <!-- END OF ABOUT SECTION -->
             <section id="skills">
                 <aside class="left_side anim-one">
                     <button id="skills-menu-btn" onclick="toggleSkillsMenu()">
@@ -138,12 +134,9 @@
                         <li class="">
                             <a class="" id="">CAD/CAM</a>
                         </li>
-
-
-
                     </ul>
                 </aside>
-                <div class="right_side anim-two">
+                <div class="right_side">
                     <div class="skills-wrapper active" id="programming-skills">
                         <div class="row">
                             <div class="skill-img">
@@ -188,7 +181,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="skills-wrapper slide" id="web-skills">
                         <div class="row">
                             <div class="skill-img">
@@ -409,65 +401,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <!--                <div id="skills-wrapper" style="display: none">
-                    <div class="skill-container" id="auto-cad">
-                        <img src="./img/skills/acad.png" />
-                        <span>AUTO CAD</span>
-                    </div>
-                    <div class="skill-container" id="aspnet">
-                        <img src="./img/skills/aspnet_logo.png" />
-                        <span>ASP .NET</span>
-                    </div>
-                    <div class="skill-container" id="csharp">
-                        <img src="./img/skills/Csharp_Logo.png" />
-                        <span>C#</span>
-                    </div>
-                    <div class="skill-container" id="mssql">
-                        <img src="./img/skills/microsoft_sql.png" />
-                        <span>MS SQL SERVER</span>
-                    </div>
-                    <div class="skill-container" id="webskills">
-                        <img src="./img/skills/web.png" />
-                        <span>WEB</span>
-                    </div>
-                    <div class="skill-container" id="winforms">
-                        <img src="./img/skills/aspnet_winforms_logo.png" />
-                        <span>WINDOWS FORMS</span>
-                    </div>
-                    <div id="skill-slides">
-                        <a href="# " class="close-button" id="skills-close"></a>
-                        <div id="autocad-slides">
-                            <div class="skill-description-wrapper">
-                                <div class="skill-image">
-
-                                </div>
-                                <div class="skill-description">
-
-                                </div>
-                                <progress></progress>
-                            </div>
-                        </div>
-                        <div id="aspnet-slides">
-
-                        </div>
-                        <div id="csharp-slides">
-
-                        </div>
-                        <div id="mssql-slides">
-
-                        </div>
-                        <div id="web-slides">
-
-                        </div>
-                        <div id="wforms-slides">
-
-                        </div>
-                    </div>      -->
             </section>
+            <!-- END OF SKILLS SECTION -->
             <section id="projects">
-
                 <div class="project-container anim-one">
                     <div id="crud-project" onclick="crudShow()">
                         <h2>CREATE READ UPDATE DELETE APLICATION</h2>
@@ -476,7 +413,65 @@
                 <div id="crud-slide" class="project-slide">
                     <a href="#" class="close-button" id="skills-close" onclick="crudClose()"></a>
                     <div class="image-container">
-                        <img src="./img/crud/pic-2.png" />
+                        <div class="container">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="./img/crud/pic-2.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="./img/crud/pic-1.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="./img/crud/pic-2.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="./img/crud/pic-1.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="./img/crud/pic-2.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="./img/crud/pic-1.png" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-description">
                         <h2>WoodsCreative website:</h2>
@@ -544,6 +539,7 @@
                     </div>
                 </div>
             </section>
+            <!-- END OF PROJECTS SECTION -->
             <section id="contact">
                 <div class="contact-container anim-two">
                     <a href="pavkovbranko@pavkovbranko.com" class="contact-email">
@@ -570,6 +566,7 @@
                     </a>
                 </div>
             </section>
+            <!-- END OF CONTACT SECTION -->
         </div>
         <div class="button-wrapper">
             <div class="button-group">
@@ -610,18 +607,13 @@
             </div>
         </div>
         <!-- #main -->
-
     </div>
     <!-- #main-container -->
-
     <div class="footer-container">
         <footer class="wrapper">
             <h5>2018© Vladimir Cordas</h5>
         </footer>
     </div>
-
-
-
 
     <script src="js/main.js"></script>
 
