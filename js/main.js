@@ -233,3 +233,50 @@ var captionText3 = document.getElementById("caption3");
     dots3[slideIndex3-1].className += " active";
     captionText3.innerHTML = dots3[slideIndex3-1].alt;
 }
+
+
+
+
+
+var modal = document.getElementById('skillsModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.querySelectorAll('.mySlides img');
+var img2 = document.querySelectorAll('.mySlides2 img');
+var img3 = document.querySelectorAll('.mySlides3 img');
+var modalImg = document.getElementById("modalImage");
+var captionText = document.getElementById("modalDescription");
+
+for (i = 0; i < img.length; i++) {
+    img[i].addEventListener("click", function(){
+    
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }, false);
+}
+
+for (i = 0; i < img.length; i++) {
+    img2[i].addEventListener("click", function(){
+    
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }, false);
+}
+
+for (i = 0; i < img.length; i++) {
+    img3[i].addEventListener("click", function(){
+    
+        modal.style.display = "flex";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }, false);
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
