@@ -28,32 +28,33 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <div class="backdrop noise">
-        <img src="./img/wire.png" alt="wire" class="shadowchild" id="background-image">
-        <div class="noise shadowchild"></div>
-    </div>
-    <div class="header-container">
-        <header class="wrapper clearfix">
-            <h1 class="title" id="title">PAVKOV BRANKO</h1>
-            <h2>Software Developer</h2>
-            <div onclick="handleMenu()" id="menu-btn" class="hamburger hamburger--emphatic js-hamburger">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
+    <div id="body-wrapper">
+        <div class="backdrop noise">
+            <img src="./img/wire.png" alt="wire" class="shadowchild" id="background-image">
+            <div class="noise shadowchild"></div>
+        </div>
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title" id="title">PAVKOV BRANKO</h1>
+                <h2>Software Developer</h2>
+                <div onclick="handleMenu()" id="menu-btn" class="hamburger hamburger--emphatic js-hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
                 </div>
-            </div>
-            <nav id="sideMenu">
-                <ul>
-                    <li>
-                        <button id="about-btn" class="active" onclick="navigationButtonPress()">
+                <nav id="sideMenu">
+                    <ul>
+                        <li>
+                            <button id="about-btn" class="active" onclick="navigationButtonPress()">
                             <span>A</span>
                             <span>B</span>
                             <span>O</span>
                             <span>U</span>
                             <span>T</span>
                         </button>
-                    </li>
-                    <li>
-                        <button id="skills-btn" onclick="navigationButtonPress()">
+                        </li>
+                        <li>
+                            <button id="skills-btn" onclick="navigationButtonPress()">
                             <span>S</span>
                             <span>K</span>
                             <span>I</span>
@@ -61,9 +62,9 @@
                             <span>L</span>
                             <span>S</span>
                         </button>
-                    </li>
-                    <li>
-                        <button id="projects-btn" onclick="navigationButtonPress()">
+                        </li>
+                        <li>
+                            <button id="projects-btn" onclick="navigationButtonPress()">
                             <span>P</span>
                             <span>R</span>
                             <span>O</span>
@@ -73,9 +74,9 @@
                             <span>T</span>
                             <span>S</span>
                         </button>
-                    </li>
-                    <li>
-                        <button id="contact-btn" onclick="navigationButtonPress()">
+                        </li>
+                        <li>
+                            <button id="contact-btn" onclick="navigationButtonPress()">
                             <span>C</span>
                             <span>O</span>
                             <span>N</span>
@@ -84,624 +85,624 @@
                             <span>C</span>
                             <span>T</span>
                         </button>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div class="main-container" id="contentMain">
-        <div class="main wrapper clearfix">
-            <section id="about" class="active">
-                <div class="anim-one">
-                    <h1>I am Full-Stack Software Developer.</h1>
-                </div>
-                <div class="anim-two">
-                    <p>I have completed my studies at the Faculty of Technical Sciences in Novi Sad and gained MSc in Mechanical Engineering at the Department of Computer Aided Technologies.
-                    </p>
-                    <p>I was always interested in experimental research and data processing, so for my Bachelor's degree final project, I developed the database of the cutting regime elements based on the Microsoft SQL, as well as the Windows Forms Application</p>
-                </div>
-                <div class="anim-three">
-                    <p>Upon completion of my Bachelor’s studies, I have been working as Mechanical Engineer and Lead Mechanical Engineer and encountered a lot of problems in calculations and 3D modeling for which I know that could be solved more efficiently
-                        with programming, so I decided to finish my studies and improve my programming skills.
-                    </p>
-                    <p>Currently, I am focused on improving my programming skills. My interests are the web and desktop development. You can see the full list of technologies that I'm currently using within Skills section.
-                    </p>
-                </div>
-            </section>
-            <!-- END OF ABOUT SECTION -->
-            <section id="skills">
-                <aside class="left_side anim-one">
-                    <button id="skills-menu-btn" onclick="toggleSkillsMenu()">
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="main-container" id="contentMain">
+            <div class="main wrapper clearfix">
+                <section id="about" class="active">
+                    <div class="anim-one">
+                        <h1>I am Full-Stack Software Developer.</h1>
+                    </div>
+                    <div class="anim-two">
+                        <p>I have completed my studies at the Faculty of Technical Sciences in Novi Sad and gained MSc in Mechanical Engineering at the Department of Computer Aided Technologies.
+                        </p>
+                        <p>I was always interested in experimental research and data processing, so for my Bachelor's degree final project, I developed the database of the cutting regime elements based on the Microsoft SQL, as well as the Windows Forms Application</p>
+                    </div>
+                    <div class="anim-three">
+                        <p>Upon completion of my Bachelor’s studies, I have been working as Mechanical Engineer and Lead Mechanical Engineer and encountered a lot of problems in calculations and 3D modeling for which I know that could be solved more efficiently
+                            with programming, so I decided to finish my studies and improve my programming skills.
+                        </p>
+                        <p>Currently, I am focused on improving my programming skills. My interests are the web and desktop development. You can see the full list of technologies that I'm currently using within Skills section.
+                        </p>
+                    </div>
+                </section>
+                <!-- END OF ABOUT SECTION -->
+                <section id="skills">
+                    <aside class="left_side anim-one">
+                        <button id="skills-menu-btn" onclick="toggleSkillsMenu()">
                         <span id="skill-name">SKILLS MENU </span>
                         <span class="caret"></span>
                     </button>
-                    <ul class="clicked" id="skills-menu" role="menu">
-                        <li class="selected">
-                            <a class="active" id="">PROGRAMMING</a>
-                        </li>
-                        <li class="">
-                            <a class="" id="">WEB DEVELOPMENT</a>
-                        </li>
-                        <li class="">
-                            <a class="" id="">DESKTOP DEVELOPMENT</a>
-                        </li>
-                        <li class="">
-                            <a class="" id="">DATABASES</a>
-                        </li>
-                        <li class="">
-                            <a class="" id="">WEB DESIGN</a>
-                        </li>
-                        <li class="">
-                            <a class="" id="">CAD/CAM</a>
-                        </li>
-                    </ul>
-                </aside>
-                <div class="right_side">
-                    <div class="skills-wrapper active" id="programming-skills">
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/Csharp_Logo.png" alt="C#" />
+                        <ul class="clicked" id="skills-menu" role="menu">
+                            <li class="selected">
+                                <a class="active" id="">PROGRAMMING</a>
+                            </li>
+                            <li class="">
+                                <a class="" id="">WEB DEVELOPMENT</a>
+                            </li>
+                            <li class="">
+                                <a class="" id="">DESKTOP DEVELOPMENT</a>
+                            </li>
+                            <li class="">
+                                <a class="" id="">DATABASES</a>
+                            </li>
+                            <li class="">
+                                <a class="" id="">WEB DESIGN</a>
+                            </li>
+                            <li class="">
+                                <a class="" id="">CAD/CAM</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="right_side">
+                        <div class="skills-wrapper active" id="programming-skills">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/Csharp_Logo.png" alt="C#" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>Visual C#</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-csharp">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="skill-language">
-                                <h2>Visual C#</h2>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/js_Logo.png" alt="JavaScript" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>JavaScript</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-javascript">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-csharp">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/Csharp_Logo.png" alt="ObjectPascal" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>Object Pascal</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-opascal">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/js_Logo.png" alt="JavaScript" />
+                        <div class="skills-wrapper slide" id="web-skills">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/html_Logo.png" alt="HTML5" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>HTML5</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-html">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="skill-language">
-                                <h2>JavaScript</h2>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/css_Logo.png" alt="CSS3" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>CSS3</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-css">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-javascript">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/Csharp_Logo.png" alt="jQuery" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>jQuery</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-jquery">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/Csharp_Logo.png" alt="ObjectPascal" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>Object Pascal</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-opascal">
+                        <div class="skills-wrapper slide" id="desktop-skills">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/aspnet_logo.png" alt="ASP.NET" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>ASP .NET</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-html">
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/aspnet_winforms_logo.png" alt="ASP.NET WINDOWS FORMS" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>Windows Forms</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-css">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/Csharp_Logo.png" alt="jQuery" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>jQuery</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-jquery">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-wrapper slide" id="databases-skills">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/microsoft_sql.png" alt="MS SQL" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>MSSQL SERVER</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-html">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/microsoft_sql.png" alt="MS SQL" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>MSSQL SERVER</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-css">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/microsoft_sql.png" alt="MS SQL" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>MSSQL SERVER</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-jquery">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-wrapper slide" id="webdes-skills">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/aspnet_logo.png" alt="PHOTOSHOP" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>PHOTOSHOP</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-html">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/aspnet_winforms_logo.png" alt="ILLUSTRATOR" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>ILLUSTRATOR</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-css">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/Csharp_Logo.png" alt="INDESIGN" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>INDESIGN</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-jquery">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-wrapper slide" id="cadcam-skills">
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/acad.png" alt="AUTOCAD" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>AUTOCAD</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-html">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/acad.png" alt="AUTOCAD" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>ACAD</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-css">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-img">
+                                    <img src="./img/skills/acad.png" alt="AUTOCAD" />
+                                </div>
+                                <div class="skill-language">
+                                    <h2>CAD</h2>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="wrap">
+                                        <div id="progress" class="prog-jquery">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- END OF SKILLS SECTION -->
+                <section id="projects">
+                    <div class="project-container anim-one">
+                        <div id="crud-project" onclick="crudShow()">
+                            <h2>CREATE READ UPDATE DELETE APLICATION</h2>
+                        </div>
+                    </div>
+                    <div id="crud-slide" class="project-slide">
+                        <a href="#" class="close-button" id="skills-close" onclick="crudClose()"></a>
+                        <div class="project-description-wrapper">
+                            <div class="image-container">
+                                <div class="container">
+                                    <div class="mySlides">
+                                        <div class="numbertext">1 / 6</div>
+                                        <img src="./img/crud/pic-2.png" style="width:100%" alt="crud">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">2 / 6</div>
+                                        <img src="./img/crud/pic-1.png" style="width:100%" alt="crud">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">3 / 6</div>
+                                        <img src="./img/crud/pic-2.png" style="width:100%" alt="crud">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">4 / 6</div>
+                                        <img src="./img/crud/pic-1.png" style="width:100%" alt="crud">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">5 / 6</div>
+                                        <img src="./img/crud/pic-2.png" style="width:100%" alt="crud">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">6 / 6</div>
+                                        <img src="./img/crud/pic-1.png" style="width:100%" alt="crud">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                                    <div class="caption-container">
+                                        <p id="caption"></p>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="column">
+                                            <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(1)" alt="crud">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(2)" alt="crud">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(3)" alt="crud">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(4)" alt="crud">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(5)" alt="crud">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(6)" alt="crud">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                <h2>WoodsCreative website:</h2>
+                                <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
+                                <dl>
+                                    <dt>Technologies used:</dt>
+                                    <dd>HTML5</dd>
+                                    <dd>CSS3</dd>
+                                    <dd>JavaScript ES5/ES6</dd>
+                                    <dd>jQuery</dd>
+                                    <dd>Materialize framework</dd>
+                                    <br>
+                                    <dd><a href="https://woodscreative.ca" target="_blank">visit website</a></dd>
+                                </dl>
                             </div>
                         </div>
                     </div>
-                    <div class="skills-wrapper slide" id="web-skills">
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/html_Logo.png" alt="HTML5" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>HTML5</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-html">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="project-container anim-three">
+                        <div id="modeling-project" onclick="modelingShow()">
+                            <h2>MODELING<br/>OF CUTTING BLA BLA</h2>
                         </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/css_Logo.png" alt="CSS3" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>CSS3</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-css">
+                    </div>
+                    <div id="modeling-slide" class="project-slide">
+                        <a href="#" class="close-button" id="skills-close" onclick="modelingClose()"></a>
+                        <div class="project-description-wrapper">
+                            <div class="image-container">
+                                <div class="container">
+                                    <div class="mySlides2">
+                                        <div class="numbertext">1 / 6</div>
+                                        <img src="./img/modeling/pic1.png" style="width:100%" alt="modeling">
+                                    </div>
+
+                                    <div class="mySlides2">
+                                        <div class="numbertext">2 / 6</div>
+                                        <img src="./img/modeling/pic2.png" style="width:100%" alt="modeling">
+                                    </div>
+
+                                    <div class="mySlides2">
+                                        <div class="numbertext">3 / 6</div>
+                                        <img src="./img/modeling/pic3.png" style="width:100%" alt="modeling">
+                                    </div>
+
+                                    <div class="mySlides2">
+                                        <div class="numbertext">4 / 6</div>
+                                        <img src="./img/modeling/pic4.png" style="width:100%" alt="modeling">
+                                    </div>
+
+                                    <div class="mySlides2">
+                                        <div class="numbertext">5 / 6</div>
+                                        <img src="./img/modeling/pic1.png" style="width:100%" alt="modeling">
+                                    </div>
+
+                                    <div class="mySlides2">
+                                        <div class="numbertext">6 / 6</div>
+                                        <img src="./img/modeling/pic1.png" style="width:100%">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides2(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides2(1)">❯</a>
+
+                                    <div class="caption-container">
+                                        <p id="caption2"></p>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="column">
+                                            <img class="demo2 cursor" src="./img/modeling/pic1.png" style="width:100%" onclick="currentSlide2(1)" alt="The Woods" alt="modeling">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo2 cursor" src="./img/modeling/pic2.png" style="width:100%" onclick="currentSlide2(2)" alt="Cinque Terre" alt="modeling">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo2 cursor" src="./img/modeling/pic3.png" style="width:100%" onclick="currentSlide2(3)" alt="Mountains and fjords" alt="modeling">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo2 cursor" src="./img/modeling/pic4.png" style="width:100%" onclick="currentSlide2(4)" alt="Northern Lights" alt="modeling">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo2 cursor" src="./img/modeling/pic1.png" style="width:100%" onclick="currentSlide2(5)" alt="Nature and sunrise" alt="modeling">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo2 cursor" src="./img/modeling/pic1.png" style="width:100%" onclick="currentSlide2(6)" alt="Snowy Mountains" alt="modeling">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/Csharp_Logo.png" alt="jQuery" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>jQuery</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-jquery">
-                                    </div>
-                                </div>
+                            <div class="project-description">
+                                <h2>WoodsCreative website:</h2>
+                                <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
+                                <dl>
+                                    <dt>Technologies used:</dt>
+                                    <dd>HTML5</dd>
+                                    <dd>CSS3</dd>
+                                    <dd>JavaScript ES5/ES6</dd>
+                                    <dd>jQuery</dd>
+                                    <dd>Materialize framework</dd>
+                                    <br>
+                                    <dd><a href="https://woodscreative.ca" target="_blank">visit website</a></dd>
+                                </dl>
                             </div>
                         </div>
                     </div>
-                    <div class="skills-wrapper slide" id="desktop-skills">
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/aspnet_logo.png" alt="ASP.NET" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>ASP .NET</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-html">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/aspnet_winforms_logo.png" alt="ASP.NET WINDOWS FORMS" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>Windows Forms</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-css">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/Csharp_Logo.png" alt="jQuery" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>jQuery</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-jquery">
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="project-container anim-two">
+                        <div id="website-project" onclick="websiteShow()">
+                            <h2>WEBSITE</h2>
                         </div>
                     </div>
-                    <div class="skills-wrapper slide" id="databases-skills">
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/microsoft_sql.png" alt="MS SQL" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>MSSQL SERVER</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-html">
+                    <div id="website-slide" class="project-slide">
+                        <a href="#" class="close-button" id="skills-close" onclick="websiteClose()"></a>
+                        <div class="project-description-wrapper">
+                            <div class="image-container">
+                                <div class="container">
+                                    <div class="mySlides3">
+                                        <div class="numbertext">1 / 6</div>
+                                        <img src="./img/website/pic-1.png" style="width:100%" alt="website">
+                                    </div>
+
+                                    <div class="mySlides3">
+                                        <div class="numbertext">2 / 6</div>
+                                        <img src="./img/website/pic-2.png" style="width:100%" alt="website">
+                                    </div>
+
+                                    <div class="mySlides3">
+                                        <div class="numbertext">3 / 6</div>
+                                        <img src="./img/website/pic-3.png" style="width:100%" alt="website">
+                                    </div>
+
+                                    <div class="mySlides3">
+                                        <div class="numbertext">4 / 6</div>
+                                        <img src="./img/website/pic-1.png" style="width:100%" alt="website">
+                                    </div>
+
+                                    <div class="mySlides3">
+                                        <div class="numbertext">5 / 6</div>
+                                        <img src="./img/website/pic-2.png" style="width:100%" alt="website">
+                                    </div>
+
+                                    <div class="mySlides3">
+                                        <div class="numbertext">6 / 6</div>
+                                        <img src="./img/website/pic-3.png" style="width:100%" alt="website">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides3(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides3(1)">❯</a>
+
+                                    <div class="caption-container">
+                                        <p id="caption3"></p>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="column">
+                                            <img class="demo3 cursor" src="./img/website/pic-1.png" style="width:100%" onclick="currentSlide3(1)" alt="The Woods" alt="website">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo3 cursor" src="./img/website/pic-2.png" style="width:100%" onclick="currentSlide3(2)" alt="Cinque Terre" alt="website">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo3 cursor" src="./img/website/pic-3.png" style="width:100%" onclick="currentSlide3(3)" alt="Mountains and fjords" alt="website">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo3 cursor" src="./img/website/pic-1.png" style="width:100%" onclick="currentSlide3(4)" alt="Northern Lights" alt="website">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo3 cursor" src="./img/website/pic-2.png" style="width:100%" onclick="currentSlide3(5)" alt="Nature and sunrise" alt="website">
+                                        </div>
+                                        <div class="column">
+                                            <img class="demo3 cursor" src="./img/website/pic-3.png" style="width:100%" onclick="currentSlide3(6)" alt="Snowy Mountains" alt="website">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/microsoft_sql.png" alt="MS SQL" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>MSSQL SERVER</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-css">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/microsoft_sql.png" alt="MS SQL" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>MSSQL SERVER</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-jquery">
-                                    </div>
-                                </div>
+                            <div class="project-description">
+                                <h2>WoodsCreative website:</h2>
+                                <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
+                                <dl>
+                                    <dt>Technologies used:</dt>
+                                    <dd>HTML5</dd>
+                                    <dd>CSS3</dd>
+                                    <dd>JavaScript ES5/ES6</dd>
+                                    <dd>jQuery</dd>
+                                    <dd>Materialize framework</dd>
+                                    <br>
+                                    <dd><a href="https://woodscreative.ca" target="_blank">visit website</a></dd>
+                                </dl>
                             </div>
                         </div>
+
+
                     </div>
-                    <div class="skills-wrapper slide" id="webdes-skills">
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/aspnet_logo.png" alt="PHOTOSHOP" />
+                </section>
+                <!-- END OF PROJECTS SECTION -->
+                <section id="contact">
+                    <div class="contact-container anim-two">
+                        <a href="pavkovbranko@pavkovbranko.com" class="contact-email">
+                            <div class="wrapper">
+                                <i class="far fa-envelope fa-3x"></i>
+                                <i class="far fa-envelope fa-3x"></i>
                             </div>
-                            <div class="skill-language">
-                                <h2>PHOTOSHOP</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-html">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/aspnet_winforms_logo.png" alt="ILLUSTRATOR" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>ILLUSTRATOR</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-css">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/Csharp_Logo.png" alt="INDESIGN" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>INDESIGN</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-jquery">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="skills-wrapper slide" id="cadcam-skills">
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/acad.png" alt="AUTOCAD" />
+                    <div class="contact-container anim-two">
+                        <a>
+                            <div class="wrapper">
+                                <i class="fas fa-phone fa-3x"></i>
+                                <i class="fas fa-phone fa-3x"></i>
                             </div>
-                            <div class="skill-language">
-                                <h2>AUTOCAD</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-html">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/acad.png" alt="AUTOCAD" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>ACAD</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-css">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="skill-img">
-                                <img src="./img/skills/acad.png" alt="AUTOCAD" />
-                            </div>
-                            <div class="skill-language">
-                                <h2>CAD</h2>
-                            </div>
-                            <div class="skill-progress-bar">
-                                <div class="wrap">
-                                    <div id="progress" class="prog-jquery">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                </div>
-            </section>
-            <!-- END OF SKILLS SECTION -->
-            <section id="projects">
-                <div class="project-container anim-one">
-                    <div id="crud-project" onclick="crudShow()">
-                        <h2>CREATE READ UPDATE DELETE APLICATION</h2>
-                    </div>
-                </div>
-                <div id="crud-slide" class="project-slide">
-                    <a href="#" class="close-button" id="skills-close" onclick="crudClose()"></a>
-                    <div class="project-description-wrapper">
-                        <div class="image-container">
-                            <div class="container">
-                                <div class="mySlides">
-                                    <div class="numbertext">1 / 6</div>
-                                    <img src="./img/crud/pic-2.png" style="width:100%" alt="crud">
-                                </div>
-
-                                <div class="mySlides">
-                                    <div class="numbertext">2 / 6</div>
-                                    <img src="./img/crud/pic-1.png" style="width:100%" alt="crud">
-                                </div>
-
-                                <div class="mySlides">
-                                    <div class="numbertext">3 / 6</div>
-                                    <img src="./img/crud/pic-2.png" style="width:100%" alt="crud">
-                                </div>
-
-                                <div class="mySlides">
-                                    <div class="numbertext">4 / 6</div>
-                                    <img src="./img/crud/pic-1.png" style="width:100%" alt="crud">
-                                </div>
-
-                                <div class="mySlides">
-                                    <div class="numbertext">5 / 6</div>
-                                    <img src="./img/crud/pic-2.png" style="width:100%" alt="crud">
-                                </div>
-
-                                <div class="mySlides">
-                                    <div class="numbertext">6 / 6</div>
-                                    <img src="./img/crud/pic-1.png" style="width:100%" alt="crud">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                                <a class="next" onclick="plusSlides(1)">❯</a>
-
-                                <div class="caption-container">
-                                    <p id="caption"></p>
-                                </div>
-
-                                <div class="row">
-                                    <div class="column">
-                                        <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(1)" alt="crud">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(2)" alt="crud">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(3)" alt="crud">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(4)" alt="crud">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo cursor" src="./img/crud/pic-2.png" style="width:100%" onclick="currentSlide(5)" alt="crud">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo cursor" src="./img/crud/pic-1.png" style="width:100%" onclick="currentSlide(6)" alt="crud">
-                                    </div>
-                                </div>
+                    <div class="contact-container anim-two">
+                        <a href="www.linkedin.com/brankopavkov/" class="contact-linkedin">
+                            <div class="wrapper">
+                                <i class="fab fa-linkedin-in fa-3x"></i>
+                                <i class="fab fa-linkedin-in fa-3x"></i>
                             </div>
-                        </div>
-                        <div class="project-description">
-                            <h2>WoodsCreative website:</h2>
-                            <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
-                            <dl>
-                                <dt>Technologies used:</dt>
-                                <dd>HTML5</dd>
-                                <dd>CSS3</dd>
-                                <dd>JavaScript ES5/ES6</dd>
-                                <dd>jQuery</dd>
-                                <dd>Materialize framework</dd>
-                                <br>
-                                <dd><a href="https://woodscreative.ca" target="_blank">visit website</a></dd>
-                            </dl>
-                        </div>
+                        </a>
                     </div>
-                </div>
-                <div class="project-container anim-three">
-                    <div id="modeling-project" onclick="modelingShow()">
-                        <h2>MODELING<br/>OF CUTTING BLA BLA</h2>
-                    </div>
-                </div>
-                <div id="modeling-slide" class="project-slide">
-                    <a href="#" class="close-button" id="skills-close" onclick="modelingClose()"></a>
-                    <div class="project-description-wrapper">
-                        <div class="image-container">
-                            <div class="container">
-                                <div class="mySlides2">
-                                    <div class="numbertext">1 / 6</div>
-                                    <img src="./img/modeling/pic1.png" style="width:100%" alt="modeling">
-                                </div>
-
-                                <div class="mySlides2">
-                                    <div class="numbertext">2 / 6</div>
-                                    <img src="./img/modeling/pic2.png" style="width:100%" alt="modeling">
-                                </div>
-
-                                <div class="mySlides2">
-                                    <div class="numbertext">3 / 6</div>
-                                    <img src="./img/modeling/pic3.png" style="width:100%" alt="modeling">
-                                </div>
-
-                                <div class="mySlides2">
-                                    <div class="numbertext">4 / 6</div>
-                                    <img src="./img/modeling/pic4.png" style="width:100%" alt="modeling">
-                                </div>
-
-                                <div class="mySlides2">
-                                    <div class="numbertext">5 / 6</div>
-                                    <img src="./img/modeling/pic1.png" style="width:100%" alt="modeling">
-                                </div>
-
-                                <div class="mySlides2">
-                                    <div class="numbertext">6 / 6</div>
-                                    <img src="./img/modeling/pic1.png" style="width:100%">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides2(-1)">❮</a>
-                                <a class="next" onclick="plusSlides2(1)">❯</a>
-
-                                <div class="caption-container">
-                                    <p id="caption2"></p>
-                                </div>
-
-                                <div class="row">
-                                    <div class="column">
-                                        <img class="demo2 cursor" src="./img/modeling/pic1.png" style="width:100%" onclick="currentSlide2(1)" alt="The Woods" alt="modeling">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo2 cursor" src="./img/modeling/pic2.png" style="width:100%" onclick="currentSlide2(2)" alt="Cinque Terre" alt="modeling">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo2 cursor" src="./img/modeling/pic3.png" style="width:100%" onclick="currentSlide2(3)" alt="Mountains and fjords" alt="modeling">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo2 cursor" src="./img/modeling/pic4.png" style="width:100%" onclick="currentSlide2(4)" alt="Northern Lights" alt="modeling">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo2 cursor" src="./img/modeling/pic1.png" style="width:100%" onclick="currentSlide2(5)" alt="Nature and sunrise" alt="modeling">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo2 cursor" src="./img/modeling/pic1.png" style="width:100%" onclick="currentSlide2(6)" alt="Snowy Mountains" alt="modeling">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            <h2>WoodsCreative website:</h2>
-                            <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
-                            <dl>
-                                <dt>Technologies used:</dt>
-                                <dd>HTML5</dd>
-                                <dd>CSS3</dd>
-                                <dd>JavaScript ES5/ES6</dd>
-                                <dd>jQuery</dd>
-                                <dd>Materialize framework</dd>
-                                <br>
-                                <dd><a href="https://woodscreative.ca" target="_blank">visit website</a></dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-container anim-two">
-                    <div id="website-project" onclick="websiteShow()">
-                        <h2>WEBSITE</h2>
-                    </div>
-                </div>
-                <div id="website-slide" class="project-slide">
-                    <a href="#" class="close-button" id="skills-close" onclick="websiteClose()"></a>
-                    <div class="project-description-wrapper">
-                        <div class="image-container">
-                            <div class="container">
-                                <div class="mySlides3">
-                                    <div class="numbertext">1 / 6</div>
-                                    <img src="./img/website/pic-1.png" style="width:100%" alt="website">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <div class="numbertext">2 / 6</div>
-                                    <img src="./img/website/pic-2.png" style="width:100%" alt="website">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <div class="numbertext">3 / 6</div>
-                                    <img src="./img/website/pic-3.png" style="width:100%" alt="website">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <div class="numbertext">4 / 6</div>
-                                    <img src="./img/website/pic-1.png" style="width:100%" alt="website">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <div class="numbertext">5 / 6</div>
-                                    <img src="./img/website/pic-2.png" style="width:100%" alt="website">
-                                </div>
-
-                                <div class="mySlides3">
-                                    <div class="numbertext">6 / 6</div>
-                                    <img src="./img/website/pic-3.png" style="width:100%" alt="website">
-                                </div>
-
-                                <a class="prev" onclick="plusSlides3(-1)">❮</a>
-                                <a class="next" onclick="plusSlides3(1)">❯</a>
-
-                                <div class="caption-container">
-                                    <p id="caption3"></p>
-                                </div>
-
-                                <div class="row">
-                                    <div class="column">
-                                        <img class="demo3 cursor" src="./img/website/pic-1.png" style="width:100%" onclick="currentSlide3(1)" alt="The Woods" alt="website">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo3 cursor" src="./img/website/pic-2.png" style="width:100%" onclick="currentSlide3(2)" alt="Cinque Terre" alt="website">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo3 cursor" src="./img/website/pic-3.png" style="width:100%" onclick="currentSlide3(3)" alt="Mountains and fjords" alt="website">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo3 cursor" src="./img/website/pic-1.png" style="width:100%" onclick="currentSlide3(4)" alt="Northern Lights" alt="website">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo3 cursor" src="./img/website/pic-2.png" style="width:100%" onclick="currentSlide3(5)" alt="Nature and sunrise" alt="website">
-                                    </div>
-                                    <div class="column">
-                                        <img class="demo3 cursor" src="./img/website/pic-3.png" style="width:100%" onclick="currentSlide3(6)" alt="Snowy Mountains" alt="website">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-description">
-                            <h2>WoodsCreative website:</h2>
-                            <p>WoodsCreative - Design /W Intent is a project I was working on for woodscreative.ca, full front-end from the provided PSDs and AI files.</p>
-                            <dl>
-                                <dt>Technologies used:</dt>
-                                <dd>HTML5</dd>
-                                <dd>CSS3</dd>
-                                <dd>JavaScript ES5/ES6</dd>
-                                <dd>jQuery</dd>
-                                <dd>Materialize framework</dd>
-                                <br>
-                                <dd><a href="https://woodscreative.ca" target="_blank">visit website</a></dd>
-                            </dl>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-            <!-- END OF PROJECTS SECTION -->
-            <section id="contact">
-                <div class="contact-container anim-two">
-                    <a href="pavkovbranko@pavkovbranko.com" class="contact-email">
-                        <div class="wrapper">
-                            <i class="far fa-envelope fa-3x"></i>
-                            <i class="far fa-envelope fa-3x"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="contact-container anim-two">
-                    <a>
-                        <div class="wrapper">
-                            <i class="fas fa-phone fa-3x"></i>
-                            <i class="fas fa-phone fa-3x"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="contact-container anim-two">
-                    <a href="www.linkedin.com/brankopavkov/" class="contact-linkedin">
-                        <div class="wrapper">
-                            <i class="fab fa-linkedin-in fa-3x"></i>
-                            <i class="fab fa-linkedin-in fa-3x"></i>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <!-- END OF CONTACT SECTION -->
-        </div>
-        <div class="button-wrapper">
-            <div class="button-group">
-                <button id="about-btn" class="active" onclick="navigationButtonPress()">
+                </section>
+                <!-- END OF CONTACT SECTION -->
+            </div>
+            <div class="button-wrapper">
+                <div class="button-group">
+                    <button id="about-btn" class="active" onclick="navigationButtonPress()">
                     <span>A</span>
                     <span>B</span>
                     <span>O</span>
                     <span>U</span>
                     <span>T</span>
                     </button>
-                <button id="skills-btn" onclick="navigationButtonPress()">
+                    <button id="skills-btn" onclick="navigationButtonPress()">
                     <span>S</span>
                     <span>K</span>
                     <span>I</span>
@@ -709,7 +710,7 @@
                     <span>L</span>
                     <span>S</span>
                 </button>
-                <button id="projects-btn" onclick="navigationButtonPress()">
+                    <button id="projects-btn" onclick="navigationButtonPress()">
                     <span>P</span>
                     <span>R</span>
                     <span>O</span>
@@ -719,7 +720,7 @@
                     <span>T</span>
                     <span>S</span>
                 </button>
-                <button id="contact-btn" onclick="navigationButtonPress()">
+                    <button id="contact-btn" onclick="navigationButtonPress()">
                     <span>C</span>
                     <span>O</span>
                     <span>N</span>
@@ -728,17 +729,17 @@
                     <span>C</span>
                     <span>T</span>
                 </button>
+                </div>
             </div>
+            <!-- #main -->
         </div>
-        <!-- #main -->
+        <!-- #main-container -->
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h5>2018© Vladimir Cordas</h5>
+            </footer>
+        </div>
     </div>
-    <!-- #main-container -->
-    <div class="footer-container">
-        <footer class="wrapper">
-            <h5>2018© Vladimir Cordas</h5>
-        </footer>
-    </div>
-
     <script src="js/main.js"></script>
 
     <!--     Google Analytics: change UA-XXXXX-X to be your site's ID. 

@@ -4,7 +4,6 @@
         color: #222;
         font-size: 1em;
         line-height: 1.4;
-        overflow-y: hidden;
     }
     
     html,
@@ -16,6 +15,10 @@
     }
     
     body {
+        overflow: hidden;
+    }
+    
+    #body-wrapper {
         overflow: hidden;
     }
     
@@ -1936,6 +1939,7 @@
             left: 0;
             right: 0;
             height: 60px;
+            width: 100%;
         }
         nav {
             width: calc(100% - 65px);
