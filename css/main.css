@@ -1910,12 +1910,20 @@
             min-height: 100%;
             margin-bottom: -40px;
         }
+        #body-wrapper {
+            position: relative;
+        }
         .noise.shadowchild {
             display: none;
         }
         #background-image {
             -webkit-animation: none;
             animation: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
         .main-container {
             height: auto;
