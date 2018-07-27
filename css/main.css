@@ -11,8 +11,11 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         height: 100%;
-        overflow: hidden;
         background: #18232E;
+    }
+    
+    body {
+        overflow: hidden;
     }
     
      ::-moz-selection {
@@ -473,60 +476,6 @@
         transform: translateX(-120%) translateX(60px);
     }
     /* =========== MENU BUTTON ============ */
-    
-    .B {
-        position: absolute;
-        top: 12.5px;
-        left: 100px;
-        width: 60px;
-        height: 50px;
-        border-left: solid 5px white;
-    }
-    
-    .B:before {
-        position: absolute;
-        content: '';
-        width: 15px;
-        height: 15px;
-        border-width: 5px 5px 5px 0;
-        border-color: white;
-        border-style: solid;
-        border-radius: 0 240%180%0 /0 180%180%0;
-    }
-    
-    .B:after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        width: 20px;
-        height: 20px;
-        border-width: 5px 5px 5px 0;
-        border-color: white;
-        border-style: solid;
-        border-radius: 0 180%220%0 /0 180%180%0;
-    }
-    
-    .P {
-        position: absolute;
-        top: 12.5px;
-        left: 43px;
-        width: 20px;
-        height: 50px;
-        border-left: solid 5px white;
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-    }
-    
-    .P:before {
-        position: absolute;
-        content: '';
-        width: 20px;
-        height: 20px;
-        border-width: 5px 5px 5px 0;
-        border-color: white;
-        border-style: solid;
-        border-radius: 0 220%220%0 /0 180%180%0;
-    }
     
     .hamburger {
         font: inherit;
